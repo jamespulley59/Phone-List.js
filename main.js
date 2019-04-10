@@ -17,9 +17,9 @@ function filterNames() {
     for(var i=0; i<names.length; i++) {
        // compare names
        if(names[i].innerText.toUpperCase().includes(value.toUpperCase())) {
-            names[i].style.display = 'block'
+            names[i].parentElement.style.display = 'block'
        } else {
-            names[i].style.display = 'none'
+            names[i].parentElement.style.display = 'none'
        }
     }
 }
